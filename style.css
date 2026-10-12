@@ -1,0 +1,22 @@
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font:17px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1a1a2e;background:#f6f7fb}
+.wrap{max-width:720px;margin:0 auto;padding:0 16px}
+.hero{background:linear-gradient(135deg,#1a1a2e,#3a2d7a);color:#fff;padding:calc(28px + env(safe-area-inset-top)) 0 26px}
+.tag{opacity:.7;text-transform:uppercase;letter-spacing:.1em;font-size:12px;margin:0}
+h1{font-size:clamp(26px,7vw,40px);line-height:1.15;margin:.3em 0 .4em}.sub{opacity:.9;margin:0}
+main{padding:20px 16px 8px}.lbl{display:block;font-weight:700;margin-bottom:8px}
+textarea{width:100%;padding:14px;border:1px solid #ccd;border-radius:12px;font:inherit;font-size:17px;min-height:130px}
+.ex{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0 4px}.ex span{color:#666;font-size:14px}
+.ex button{background:#ecebf7;color:#3a2d7a;border:0;border-radius:999px;padding:10px 14px;font:inherit;font-size:15px;min-height:44px}
+button{cursor:pointer;-webkit-tap-highlight-color:transparent}
+.big{display:block;width:100%;min-height:56px;margin-top:14px;background:#3a2d7a;color:#fff;border:0;border-radius:14px;font:inherit;font-size:18px;font-weight:700}
+.big:disabled{opacity:.6}.big.alt{background:#ffcc4d;color:#1a1a2e}
+.copy{background:#3a2d7a;color:#fff;border:0;border-radius:10px;min-height:44px;min-width:76px;padding:0 14px;font:inherit;font-weight:600}
+.done{background:#1a1a2e;color:#fff;border-radius:16px;padding:18px;margin:18px 0}.done h2{margin:0;word-break:break-word}.done .small{color:#bbb}
+.card{background:#fff;border:1px solid #e3e3ef;border-radius:16px;padding:16px;margin:16px 0}
+.card h3{margin:0 0 6px}.h{display:flex;justify-content:space-between;align-items:center;gap:10px}
+pre{white-space:pre-wrap;word-break:break-word;background:#f3f2fa;padding:14px;border-radius:10px;font-size:14.5px;margin:10px 0 0;font-family:ui-monospace,Menlo,monospace}
+ol,ul{padding-left:1.3em}li{margin:.5em 0}.steps li{padding-left:2px}.where{background:#fff7dc}
+.starter{border-top:1px solid #eee;padding-top:12px;margin-top:12px}.muted{background:#fafafa}
+.small{color:#666;font-size:14px;margin:4px 0 0}.err{color:#b00020;font-weight:600}.meta{color:#888;font-size:13px}
+footer{color:#999;font-size:13px;padding:24px 16px calc(24px + env(safe-area-inset-bottom))}

@@ -1,0 +1,47 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1a1a2e">
+<title>Agent Builder — describe a job, get your AI assistant</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="hero"><div class="wrap">
+<p class="tag">Agent Builder</p>
+<h1>Describe one job. Get a ready-to-use AI assistant.</h1>
+<p class="sub">Type what you want handled. You get the full setup on this screen: instructions, setup steps, and starter prompts. Tap Copy and paste into ChatGPT, Claude, or Gemini. Nothing to download.</p>
+</div></header>
+<main class="wrap">
+<form id="f">
+<label for="d" class="lbl">What job should your assistant do?</label>
+<textarea id="d" rows="5" placeholder="e.g. Inbox triage for a freelance designer. Uses Gmail. Friendly but concise." required></textarea>
+<div class="ex"><span>Try:</span>
+<button type="button" data-ex="Inbox triage for a freelance designer. Uses Gmail and Notion. Friendly but concise.">Freelance inbox</button>
+<button type="button" data-ex="Customer support replies for my Shopify store. Warm and professional.">Shopify support</button>
+<button type="button" data-ex="Sales follow-up emails for leads from LinkedIn. Direct and polite.">Lead follow-up</button>
+<button type="button" data-ex="Overdue invoice reminders and monthly expense summary for a small agency. Professional.">Invoices</button>
+</div>
+<button type="submit" id="b" class="big">Build my agent</button>
+</form>
+<p id="err" class="err" role="alert"></p>
+
+<section id="out" hidden>
+<div class="done"><p class="small">Your assistant</p><h2 id="kname"></h2>
+<button type="button" class="big alt" data-copy="all">Copy the whole kit</button></div>
+
+<div class="card"><h3>1 · Start here</h3><ol id="start"></ol></div>
+
+<div class="card"><div class="h"><h3>2 · System prompt</h3><button type="button" class="copy" data-copy="sp">Copy</button></div>
+<p class="small">Paste this into your assistant's instructions box.</p><pre id="sp"></pre>
+<button type="button" class="big" data-copy="sp">Copy system prompt</button></div>
+
+<div class="card"><div class="h"><h3>3 · Setup checklist</h3><button type="button" class="copy" data-copy="cl">Copy</button></div>
+<ol id="cl" class="steps"></ol><pre id="where" class="where"></pre></div>
+
+<div class="card"><h3>4 · Starter prompts</h3><p class="small">Run these on day one with your real work.</p><div id="st"></div></div>
+
+<div class="card muted"><h3>5 · What this is not</h3><ul id="lim"></ul></div>
+<p class="meta" id="meta"></p>
+</section>
+</main>
+<footer class="wrap">Agent Builder · free tool · nothing you type is stored</footer>
+<script src="engine-data.js"></script><script src="app.js"></script>
+</body></html>
